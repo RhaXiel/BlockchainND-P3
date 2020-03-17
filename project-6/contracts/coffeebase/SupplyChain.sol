@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.16;
 // Define a contract 'Supplychain'
 contract SupplyChain {
 
@@ -86,7 +86,7 @@ contract SupplyChain {
     uint _price = items[_upc].productPrice;
     uint amountToReturn = msg.value - _price;
     //items[_upc].consumerID.transfer(amountToReturn);
-    items[_upc].ownerID.transfer(amountToReturn);
+    address(uint160(items[_upc].ownerID)).transfer(amountToReturn);
   }
 
   // Define a modifier that checks if an item.state of a upc is Harvested
@@ -149,12 +149,12 @@ contract SupplyChain {
   // Define a function 'kill' if required
   function kill() public {
     if (msg.sender == owner) {
-      selfdestruct(owner);
+      selfdestruct(address(uint160(owner)));
     }
   }
 
   // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'
-  function harvestItem(uint _upc, address _originFarmerID, string _originFarmName, string _originFarmInformation, string  _originFarmLatitude, string  _originFarmLongitude, string  _productNotes) public
+  function harvestItem(uint _upc, address _originFarmerID, string memory _originFarmName, string memory _originFarmInformation, string memory  _originFarmLatitude, string memory  _originFarmLongitude, string memory  _productNotes) public
   //onlyFarmer()
   {
     // Add the new item as part of Harvest
@@ -171,9 +171,9 @@ contract SupplyChain {
       productNotes: _productNotes, // Product Notes
       productPrice: 0, // Product Price
       itemState: State.Harvested,  // Product State as represented in the enum above
-      distributorID: 0,  // Metamask-Ethereum address of the Distributor
-      retailerID: 0, // Metamask-Ethereum address of the Retailer
-      consumerID: 0 // Metamask-Ethereum address of the Consumer
+      distributorID: address(0),  // Metamask-Ethereum address of the Distributor
+      retailerID: address(0), // Metamask-Ethereum address of the Retailer
+      consumerID: address(0) // Metamask-Ethereum address of the Consumer
     });
     // Increment sku
     sku = sku + 1;
@@ -238,7 +238,7 @@ contract SupplyChain {
     items[_upc].distributorID = msg.sender;
     items[_upc].itemState = State.Sold;
     // Transfer money to farmer
-    items[_upc].originFarmerID.transfer(items[_upc].productPrice);
+    address(uint160(items[_upc].originFarmerID)).transfer(items[_upc].productPrice);
     // emit the appropriate event
     emit Sold(_upc);
   }
@@ -294,10 +294,10 @@ contract SupplyChain {
   uint    itemUPC,
   address ownerID,
   address originFarmerID,
-  string  originFarmName,
-  string  originFarmInformation,
-  string  originFarmLatitude,
-  string  originFarmLongitude
+  string memory originFarmName,
+  string memory originFarmInformation,
+  string memory originFarmLatitude,
+  string memory originFarmLongitude
   )
   {
   // Assign values to the 8 parameters
@@ -331,7 +331,7 @@ contract SupplyChain {
   uint    itemSKU,
   uint    itemUPC,
   uint    productID,
-  string  productNotes,
+  string memory productNotes,
   uint    productPrice,
   uint    itemState,
   address distributorID,
