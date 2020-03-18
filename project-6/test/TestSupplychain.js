@@ -46,12 +46,18 @@ contract('SupplyChain', function(accounts) {
         
         // Declare and Initialize a variable for event
         var eventEmitted = false
-        
+        //supplyChain.contract.events.Harvested(e => console.log(e))
+        supplyChain.contract.once("Harvested", e => console.log(e));
         // Watch the emitted event Harvested()
-        var event = supplyChain.Harvested()
+        var event = supplyChain.contract.events.Harvested();
+        //var event = supplyChain.Harvested()
+        //console.log(event);
         await event.watch((err, res) => {
             eventEmitted = true
         })
+
+        
+
 
         // Mark an item as Harvested by calling function harvestItem()
         await supplyChain.harvestItem(upc, originFarmerID, originFarmName, originFarmInformation, originFarmLatitude, originFarmLongitude, productNotes)
