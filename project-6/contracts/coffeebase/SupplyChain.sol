@@ -1,6 +1,14 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.4.24;
+
+import "../coffeeaccesscontrol/FarmerRole.sol";
+import "../coffeeaccesscontrol/DistributorRole.sol";
+import "../coffeeaccesscontrol/RetailerRole.sol";
+import "../coffeeaccesscontrol/ConsumerRole.sol";
+import "../coffeecore/Ownable.sol";
+
+
 // Define a contract 'Supplychain'
-contract SupplyChain {
+contract SupplyChain is FarmerRole, DistributorRole, RetailerRole, ConsumerRole {
 
   // Define 'owner'
   address owner;
@@ -155,7 +163,7 @@ contract SupplyChain {
 
   // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'
   function harvestItem(uint _upc, address _originFarmerID, string memory _originFarmName, string memory _originFarmInformation, string memory  _originFarmLatitude, string memory  _originFarmLongitude, string memory  _productNotes) public
-  //onlyFarmer()
+  onlyFarmer()
   {
     // Add the new item as part of Harvest
     items[_upc] = Item({
@@ -187,6 +195,7 @@ contract SupplyChain {
   harvested(_upc)
   // Call modifier to verify caller of this function
   verifyCaller(items[_upc].ownerID)
+  onlyFarmer()
   {
     // Update the appropriate fields
     items[_upc].itemState = State.Processed;
@@ -200,6 +209,7 @@ contract SupplyChain {
   processed(_upc)
   // Call modifier to verify caller of this function
   verifyCaller(items[_upc].ownerID)
+  onlyFarmer()
   {
     // Update the appropriate fields
     items[_upc].itemState = State.Packed;
@@ -213,6 +223,7 @@ contract SupplyChain {
   packed(_upc)
   // Call modifier to verify caller of this function
   verifyCaller(items[_upc].ownerID)
+  onlyFarmer()
   {
     // Update the appropriate fields
     items[_upc].productPrice = _price;
@@ -231,6 +242,7 @@ contract SupplyChain {
     paidEnough(items[_upc].productPrice)
     // Call modifer to send any excess ether back to buyer
     checkValue(_upc)
+    onlyDistributor()
     {
     
     // Update the appropriate fields - ownerID, distributorID, itemState
@@ -250,6 +262,7 @@ contract SupplyChain {
     sold(_upc)
     // Call modifier to verify caller of this function
     verifyCaller(items[_upc].distributorID)
+    onlyDistributor()
     {
     // Update the appropriate fields
     items[_upc].itemState = State.Shipped;
@@ -262,6 +275,7 @@ contract SupplyChain {
   function receiveItem(uint _upc) public
     // Call modifier to check if upc has passed previous supply chain stage
     shipped(_upc)
+    onlyRetailer()
     // Access Control List enforced by calling Smart Contract / DApp
     {
     // Update the appropriate fields - ownerID, retailerID, itemState
@@ -277,6 +291,7 @@ contract SupplyChain {
   function purchaseItem(uint _upc) public
     // Call modifier to check if upc has passed previous supply chain stage
     received(_upc)
+    onlyConsumer()
     // Access Control List enforced by calling Smart Contract / DApp
     {
     // Update the appropriate fields - ownerID, consumerID, itemState

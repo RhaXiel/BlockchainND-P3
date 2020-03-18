@@ -297,6 +297,18 @@ App = {
         }).then(function(result) {
           $("#ftc-item").text(result);
           console.log('fetchItemBufferOne', result);
+
+          //Update related fields
+          [sku, upc, ownerID, originFarmerID, originFarmName, originFarmInformation, originFarmLatitude, originFarmLongitude] = result;
+          $("#sku").val(sku);
+          $("#upc").val(upc);
+          $("#ownerID").val(ownerID);
+          $("#originFarmerID").val(originFarmerID);
+          $("#originFarmName").val(originFarmName);
+          $("#originFarmInformation").val(originFarmInformation);
+          $("#originFarmLatitude").val(originFarmLatitude);
+          $("#originFarmLongitude").val(originFarmLongitude);
+
         }).catch(function(err) {
           console.log(err.message);
         });
@@ -311,6 +323,17 @@ App = {
         }).then(function(result) {
           $("#ftc-item").text(result);
           console.log('fetchItemBufferTwo', result);
+
+          //Update related fields
+          [sku, upc, productID, productNotes, productPrice, itemState, distributorID, retailerID, consumerID] = result;
+          $("#sku").val(sku);
+          $("#upc").val(upc);
+          $("#productNotes").val(productNotes);
+          $("#productPrice").val(productPrice);
+          $("#distributorID").val(distributorID);
+          $("#retailerID").val(retailerID);
+          $("#consumerID").val(consumerID);
+
         }).catch(function(err) {
           console.log(err.message);
         });
