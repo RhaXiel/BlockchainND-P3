@@ -2,27 +2,27 @@
 
 ## Activity
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](images/1 Activity Diagram.png)
 
 ## Sequence
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](images/2 Sequence Diagram.png)
 
 ## State
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](images/3 State Diagram.png)
 
 ## Classes (Data Model)
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](images/4 Class Diagram.png)
 
 # Libraries Used
 
-HDWalletProvider was needed for deploying to the test netwkork.
+HDWalletProvider was used for deploying the contracts to the test netwkork.
 
 # IPFS
 
-IPFS wasn't used in the current version of the project, but I will add the optional requirement later on.
+IPFS wasn't used in the current version of the project. The optional requirement for this project will be added later on.
 
 # General Write Up
 
