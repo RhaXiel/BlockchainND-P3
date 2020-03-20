@@ -2,19 +2,19 @@
 
 ## Activity
 
-![alt text](images/1 Activity Diagram.png)
+![alt text](images/1_Activity_Diagram.png)
 
 ## Sequence
 
-![alt text](images/2 Sequence Diagram.png)
+![alt text](images/2_Sequence_Diagram.png)
 
 ## State
 
-![alt text](images/3 State Diagram.png)
+![alt text](images/3_State_Diagram.png)
 
 ## Classes (Data Model)
 
-![alt text](images/4 Class Diagram.png)
+![alt text](images/4_Class_Diagram.png)
 
 # Libraries Used
 
@@ -30,7 +30,7 @@ Steps and contract address.
 
 # Project Information
 
-As resulto of testing the deployed contrat, the following transactions where created:
+As result of testing the deployed contrat, the following transactions where created:
 
 ## Transaction History
 - Harvested - [0x8b454f094533ddd6424467148115ec0294ef4eadb93450e9f41f2d24e679f480](https://rinkeby.etherscan.io/tx/0x8b454f094533ddd6424467148115ec0294ef4eadb93450e9f41f2d24e679f480)
@@ -41,7 +41,7 @@ As resulto of testing the deployed contrat, the following transactions where cre
 - Received - [0xb65ec63d81135a819768268fbded4465347ec296b6bc3f1cad9c6303ef790639](https://rinkeby.etherscan.io/tx/0xb65ec63d81135a819768268fbded4465347ec296b6bc3f1cad9c6303ef790639)
 - Purchased - [0x8ca441c94650f42688238514cb93d4c58a0c17140f374b52f4152880a378ade5](https://rinkeby.etherscan.io/tx/0x8ca441c94650f42688238514cb93d4c58a0c17140f374b52f4152880a378ade5)
 
-Image
+![alt text](images/Transaction_History.png)
 
 All of the above was made for SKU: 1 UPC: 1.
 
