@@ -24,9 +24,13 @@ HDWalletProvider was used for deploying the contracts to the test netwkork.
 
 IPFS wasn't used in the current version of the project. The optional requirement for this project will be added later on.
 
-# General Write Up
+# Versions
 
-Steps and contract address.
+- Node: v10.14.0
+- Truffle: v4.1.15 (core: 4.1.15)
+- Solidity: v0.4.25 (solc-js)
+- web3: 1.2.1
+- @truffle/hdwallet-provider": ^1.0.33
 
 # Project Information
 
