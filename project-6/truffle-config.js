@@ -1,5 +1,5 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const infuraKey = "5a8c63cf3e2244048144b2d3e778b39b";
+const infuraKey = fs.readFileSync(".infura-key").toString().trim();
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 
