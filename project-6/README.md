@@ -51,4 +51,4 @@ Deployed to the Rinkeby Test Network
 
 Transaction ID: [0x02fab7f61dbf7598a22a4902cfa3859f3845bd2dda64e4e44f71ac78481e1345](https://rinkeby.etherscan.io/tx/0x02fab7f61dbf7598a22a4902cfa3859f3845bd2dda64e4e44f71ac78481e1345)
 
-Contract address: [0xAcd86ca7f08E1a947F6940FFb1C4c2F4e98AA531](https://rinkeby.etherscan.io/address/0xacd86ca7f08e1a947f6940ffb1c4c2f4e98aa531)
+Contract address: [0x7A017D7cC589b98BB479Ca60D522710771283033](https://rinkeby.etherscan.io/address/0x7A017D7cC589b98BB479Ca60D522710771283033)
