@@ -37,13 +37,14 @@ IPFS wasn't used in the current version of the project. The optional requirement
 As result of testing the deployed contrat, the following transactions where created:
 
 ## Transaction History
-- Harvested - [0x8b454f094533ddd6424467148115ec0294ef4eadb93450e9f41f2d24e679f480](https://rinkeby.etherscan.io/tx/0x8b454f094533ddd6424467148115ec0294ef4eadb93450e9f41f2d24e679f480)
-- Processed - [0xc03c0c13b5bd8b3ca5c2aaa44c8498031750077679a92e29dda7a693d642eac3](https://rinkeby.etherscan.io/tx/0xc03c0c13b5bd8b3ca5c2aaa44c8498031750077679a92e29dda7a693d642eac3)
-- Packed - [0x2a1299b890b3807645bbc72c799d5e693dd6b4d26d2b5772c47b16bceeaadaab](https://rinkeby.etherscan.io/tx/0x2a1299b890b3807645bbc72c799d5e693dd6b4d26d2b5772c47b16bceeaadaab)
-- Sold - [0xb1e545c7c2ed5efd04b9df44762c70915de31aeb6a65720eebc5a2f4426a86ea](https://rinkeby.etherscan.io/tx/0xb1e545c7c2ed5efd04b9df44762c70915de31aeb6a65720eebc5a2f4426a86ea)
-- Shipped - [0xd28174fd980718375e1d3e41cbc1496c4c95b5a8a36f70138872ef4116b5e394](https://rinkeby.etherscan.io/tx/0xd28174fd980718375e1d3e41cbc1496c4c95b5a8a36f70138872ef4116b5e394)
-- Received - [0xb65ec63d81135a819768268fbded4465347ec296b6bc3f1cad9c6303ef790639](https://rinkeby.etherscan.io/tx/0xb65ec63d81135a819768268fbded4465347ec296b6bc3f1cad9c6303ef790639)
-- Purchased - [0x8ca441c94650f42688238514cb93d4c58a0c17140f374b52f4152880a378ade5](https://rinkeby.etherscan.io/tx/0x8ca441c94650f42688238514cb93d4c58a0c17140f374b52f4152880a378ade5)
+- Harvested - [0x426584999fba6a73065e3931cdcb4c82efaf0ded7f2d1921f349dbd85464c10d](https://rinkeby.etherscan.io/tx/0x426584999fba6a73065e3931cdcb4c82efaf0ded7f2d1921f349dbd85464c10d)
+- Processed - [0xde53c11986fb0e76daa39938c79b2397a2bea7fcb1c5d96bd83adbb0789e54ec](https://rinkeby.etherscan.io/tx/0xde53c11986fb0e76daa39938c79b2397a2bea7fcb1c5d96bd83adbb0789e54ec)
+- Packed - [0x408431b9b45161746a210ebdcccd4c6f57dcb3bac8d99158db3cc93eb355243d](https://rinkeby.etherscan.io/tx/0x408431b9b45161746a210ebdcccd4c6f57dcb3bac8d99158db3cc93eb355243d)
+- ForSale - [0x7825a9244df4338427ca6f96ff0138c9ebb2784bf9dc5565ddc69d9e48713c6a](https://rinkeby.etherscan.io/tx/0x7825a9244df4338427ca6f96ff0138c9ebb2784bf9dc5565ddc69d9e48713c6a)
+- Sold - [0x32598cb39f2ad0355c7b46aaf2724d8c046e721f2fccacdb65e7b098d72689e0](https://rinkeby.etherscan.io/tx/0x32598cb39f2ad0355c7b46aaf2724d8c046e721f2fccacdb65e7b098d72689e0)
+- Shipped - [0x3eb78de305625daecdf66d781962d53f762238ad134f6ac1541b7305f287e32d](https://rinkeby.etherscan.io/tx/0x3eb78de305625daecdf66d781962d53f762238ad134f6ac1541b7305f287e32d)
+- Received - [0xbda8c391193877b765228cc92e8134a0d774a13f249373817da5764fb2c66166](https://rinkeby.etherscan.io/tx/0xbda8c391193877b765228cc92e8134a0d774a13f249373817da5764fb2c66166)
+- Purchased - [0x7832ca27591138566306fc3065c10c48ff4a2d783187260d64cd80eb18f857b7](https://rinkeby.etherscan.io/tx/0x7832ca27591138566306fc3065c10c48ff4a2d783187260d64cd80eb18f857b7)
 
 ![alt text](images/Transaction_History.png)
 
@@ -53,6 +54,6 @@ All of the above was made for SKU: 1 UPC: 1.
 
 Deployed to the Rinkeby Test Network
 
-Transaction ID: [0x02fab7f61dbf7598a22a4902cfa3859f3845bd2dda64e4e44f71ac78481e1345](https://rinkeby.etherscan.io/tx/0x02fab7f61dbf7598a22a4902cfa3859f3845bd2dda64e4e44f71ac78481e1345)
+Transaction ID: [0xfad212e8e4c0ef85e1ce5bd57a85fa3a4be72d7645e32fec02253136fd6825ed](https://rinkeby.etherscan.io/tx/0xfad212e8e4c0ef85e1ce5bd57a85fa3a4be72d7645e32fec02253136fd6825ed)
 
-Contract address: [0x7A017D7cC589b98BB479Ca60D522710771283033](https://rinkeby.etherscan.io/address/0x7A017D7cC589b98BB479Ca60D522710771283033)
+Contract address: [0x662AD000B78d08215048A3e4A7F299B209DbA016](https://rinkeby.etherscan.io/address/0x662AD000B78d08215048A3e4A7F299B209DbA016)
